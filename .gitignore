@@ -160,6 +160,13 @@ dailynote/*
 !dailynote/VCP桌面知识/
 ip_blacklist.json
 /VectorStore
+VectorStoreTDB/
+sarprompt.json
+
+# 插件运行时自动生成的配置/数据
+Plugin/VCPBridgeServer/bridge-config.json
+Plugin/VCPTaskAssistant/task-center-data.json
+Plugin/VCPTavern/access_logs.json
 
 # 插件缓存文件
 Plugin/ArtistMatcher/artist_cache.json

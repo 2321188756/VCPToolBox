@@ -13,10 +13,6 @@ echo Installing/updating Python dependencies for SciCalculator...
 cd Plugin\SciCalculator
 pip install -r requirements.txt
 cd ..\..
-echo Installing/updating Python dependencies for VideoGenerator...
-cd Plugin\VideoGenerator
-pip install -r requirements.txt
-cd ..\..
 
 REM Install/update Node.js dependencies
 echo Installing/updating dependencies...

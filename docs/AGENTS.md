@@ -8,7 +8,7 @@
 
 **VCPToolBox 现已拥有完整的全景文档（12个文档，331KB，10,395行）：**
 
-从 **[docs/DOCUMENTATION_INDEX.md](./docs/DOCUMENTATION_INDEX.md)** 开始浏览完整文档体系，包括：
+从 **[docs/DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md)** 开始浏览完整文档体系，包括：
 - 系统架构与启动序列
 - 插件生态完整规范（79个活跃插件）
 - 配置系统与参数语义
@@ -151,30 +151,30 @@ docker-compose down
 **对于需要深入理解系统的 Agent，强烈推荐按以下顺序阅读完整文档：**
 
 1. **首次接触**：
-   - [docs/DOCUMENTATION_INDEX.md](./docs/DOCUMENTATION_INDEX.md) - 文档导航总览
-   - [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) - 系统架构与启动序列
-   - [docs/PLUGIN_ECOSYSTEM.md](./docs/PLUGIN_ECOSYSTEM.md) - 插件生态完整规范
+   - [docs/DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md) - 文档导航总览
+   - [docs/ARCHITECTURE.md](./ARCHITECTURE.md) - 系统架构与启动序列
+   - [docs/PLUGIN_ECOSYSTEM.md](./PLUGIN_ECOSYSTEM.md) - 插件生态完整规范
 
 2. **开发新功能**：
-   - [docs/FEATURE_MATRIX.md](./docs/FEATURE_MATRIX.md) - 查找类似功能
-   - [docs/FILE_INVENTORY.md](./docs/FILE_INVENTORY.md) - 定位相关文件
+   - [docs/FEATURE_MATRIX.md](./FEATURE_MATRIX.md) - 查找类似功能
+   - [docs/FILE_INVENTORY.md](./FILE_INVENTORY.md) - 定位相关文件
    - 对应专项文档查阅实现细节
 
 3. **排查问题**：
-   - [docs/OPERATIONS.md](./docs/OPERATIONS.md) - 常见故障排查
-   - [docs/CONFIGURATION.md](./docs/CONFIGURATION.md) - 配置项检查
-   - [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) - 追踪调用链
+   - [docs/OPERATIONS.md](./OPERATIONS.md) - 常见故障排查
+   - [docs/CONFIGURATION.md](./CONFIGURATION.md) - 配置项检查
+   - [docs/ARCHITECTURE.md](./ARCHITECTURE.md) - 追踪调用链
 
 **完整文档列表：**
-- [DOCUMENTATION_INDEX.md](./docs/DOCUMENTATION_INDEX.md) - 文档导航与使用指南
-- [ARCHITECTURE.md](./docs/ARCHITECTURE.md) - 系统架构、启动序列、模块依赖
-- [PLUGIN_ECOSYSTEM.md](./docs/PLUGIN_ECOSYSTEM.md) - 插件类型、manifest schema、执行模式
-- [CONFIGURATION.md](./docs/CONFIGURATION.md) - 配置参数、优先级规则、风险警告
-- [API_ROUTES.md](./docs/API_ROUTES.md) - HTTP端点、认证机制、处理逻辑
-- [MEMORY_SYSTEM.md](./docs/MEMORY_SYSTEM.md) - TagMemo算法、EPA模块、向量索引
-- [DISTRIBUTED_ARCHITECTURE.md](./docs/DISTRIBUTED_ARCHITECTURE.md) - WebSocket协议、分布式工具执行
-- [RUST_VECTOR_ENGINE.md](./docs/RUST_VECTOR_ENGINE.md) - N-API接口、向量操作、性能特性
-- [FRONTEND_COMPONENTS.md](./docs/FRONTEND_COMPONENTS.md) - AdminPanel、VCPChrome、OpenWebUISub
-- [FILE_INVENTORY.md](./docs/FILE_INVENTORY.md) - 文件清单、职责、依赖关系
-- [FEATURE_MATRIX.md](./docs/FEATURE_MATRIX.md) - 功能入口、触发条件、处理流程
-- [OPERATIONS.md](./docs/OPERATIONS.md) - 运维部署、故障排查、性能监控
+- [DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md) - 文档导航与使用指南
+- [ARCHITECTURE.md](./ARCHITECTURE.md) - 系统架构、启动序列、模块依赖
+- [PLUGIN_ECOSYSTEM.md](./PLUGIN_ECOSYSTEM.md) - 插件类型、manifest schema、执行模式
+- [CONFIGURATION.md](./CONFIGURATION.md) - 配置参数、优先级规则、风险警告
+- [API_ROUTES.md](./API_ROUTES.md) - HTTP端点、认证机制、处理逻辑
+- [MEMORY_SYSTEM.md](./MEMORY_SYSTEM.md) - TagMemo算法、EPA模块、向量索引
+- [DISTRIBUTED_ARCHITECTURE.md](./DISTRIBUTED_ARCHITECTURE.md) - WebSocket协议、分布式工具执行
+- [RUST_VECTOR_ENGINE.md](./RUST_VECTOR_ENGINE.md) - N-API接口、向量操作、性能特性
+- [FRONTEND_COMPONENTS.md](./FRONTEND_COMPONENTS.md) - AdminPanel、VCPChrome、OpenWebUISub
+- [FILE_INVENTORY.md](./FILE_INVENTORY.md) - 文件清单、职责、依赖关系
+- [FEATURE_MATRIX.md](./FEATURE_MATRIX.md) - 功能入口、触发条件、处理流程
+- [OPERATIONS.md](./OPERATIONS.md) - 运维部署、故障排查、性能监控

@@ -108,7 +108,7 @@ npm install
 
 #### 步骤4：配置
 
-创建 `config.env`（参考 [`tag-processor-config.env.example`](tag-processor-config.env.example:1)）：
+创建 `config.env`（参考 [`tag-processor-config.env.example`](./examples/tag-processor-config.env.example)）：
 
 ```env
 API_Key=your_api_key_here

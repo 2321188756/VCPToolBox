@@ -20,7 +20,7 @@
 | 文件 | 角色 |
 |------|------|
 | [`SemanticModelRouter.json`](../SemanticModelRouter.json) | 运行时配置，热加载，支持示例自动生成 |
-| [`SemanticModelRouter.json.example`](../SemanticModelRouter.json.example) | 模板配置 |
+| [`SemanticModelRouter.json.example`](./examples/SemanticModelRouter.json.example) | 模板配置 |
 | [`modules/semanticModelRouter.js`](../modules/semanticModelRouter.js) | 核心模块：配置加载、向量计算、路由解析、虚拟模型清单 |
 | [`modules/chatCompletionHandler.js`](../modules/chatCompletionHandler.js) | 在变量替换前调用路由模块、注入容灾候选链到 `fetchWithRetry` |
 | [`modules/handlers/streamHandler.js`](../modules/handlers/streamHandler.js) | VCP 工具循环内的后续 fetch 也接入容灾候选链 |

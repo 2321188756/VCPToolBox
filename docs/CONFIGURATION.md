@@ -47,8 +47,8 @@
 
 ```bash
 cp config.env.example config.env
-cp agent_map.json.example agent_map.json
-cp ModelRedirect.json.example ModelRedirect.json
+cp docs/examples/agent_map.json.example agent_map.json
+cp docs/examples/ModelRedirect.json.example ModelRedirect.json
 ```
 
 ---

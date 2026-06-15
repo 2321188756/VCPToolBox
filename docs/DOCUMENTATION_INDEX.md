@@ -209,7 +209,7 @@
 ### 相关资源
 
 - **项目README**：[README.md](../README.md)
-- **VCP理论文档**：[VCP.md](../VCP.md)
+- **VCP理论文档**：[VCP.md](./VCP.md)
 - **VCP技术Lite索引**：[TECHNICAL_LITE.md](./TECHNICAL_LITE.md)
 - **VCP记忆管理系统指南**：[VCP记忆管理系统.md](./VCP记忆管理系统.md)
 - **TagMemo算法深度解析**：[TagMemo_Wave_Algorithm_Deep_Dive.md](./TagMemo_Wave_Algorithm_Deep_Dive.md)

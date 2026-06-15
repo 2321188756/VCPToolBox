@@ -1219,8 +1219,6 @@ fn main(mut cx: ModuleContext) -> NeonResult<()> {
 | PowerShellExecutor | synchronous | PowerShell 执行 |
 | ChromeBridge | hybridservice | Chrome 浏览器控制 |
 | CapturePreprocessor | messagePreprocessor | 屏幕截图 |
-| PyScreenshot | synchronous | Python 截图 |
-| PyCameraCapture | synchronous | 摄像头捕获 |
 | LinuxLogMonitor | hybridservice | Linux 日志监控 direct 工具入口；VCP 加载时仅 readonly 初始化，`start` 时进入 full 监控模式并复用 `LinuxLogMonitorServer` UDS 代理或 legacy fallback |
 | LinuxLogMonitorServer | service | 常驻日志监控服务，持有 watcher 状态与自定义规则；after-context 默认 5 秒超时刷新告警，查询 fallback 支持 `partial/fallbackError`，并按 legacy 契约适配结果 |
 | ScheduleManager | service | 日程管理 |

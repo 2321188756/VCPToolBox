@@ -234,8 +234,6 @@
 |---------|------|------|---------|
 | `ImageProcessor` | synchronous | 图像处理 | - |
 | `ImageServer` | service | 图像服务器 | - |
-| `PyScreenshot` | synchronous | Python截图 | screenshot.py |
-| `PyCameraCapture` | synchronous | 摄像头捕获 | capture.py |
 
 ### 4.10 调度与任务类 (4个)
 

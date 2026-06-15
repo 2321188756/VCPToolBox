@@ -90,9 +90,6 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
-# 但保留 AdminPanel-Vue 构建产物，让用户开箱即用
-!AdminPanel-Vue/dist/
-!AdminPanel-Vue/dist/**
 
 # Gatsby files
 .cache/
@@ -201,6 +198,14 @@ image/fluxgen/
 # 忽略 B站截图的图片
 image/bilibili/
 
+# ===== 纯装饰性角色表情包（无代码引用） =====
+image/Nova表情包/
+image/Hornet表情包/
+image/爱弥斯表情包/
+image/微明表情包/
+image/小克表情包/
+image/magi/
+
 # ===== IDE / OS 文件 =====
 .vscode/
 .DS_Store
@@ -219,6 +224,27 @@ Thumbs.db
 # ===== 编译产物 =====
 rust-vexus-lite/target/
 Plugin/DailyNoteSearcher/src/target/
+
+# ==== .NET 构建产物 ====
+Plugin/SkillBridge/SKILL/minimax-docx/**/bin/
+Plugin/SkillBridge/SKILL/minimax-docx/**/obj/
+
+# ==== 跨平台原生二进制（保留当前平台即可） ====
+rust-vexus-lite/vexus-lite.linux-x64-gnu.node
+rust-vexus-lite/vexus-lite.linux-x64-musl.node
+rust-vexus-lite/vexus-lite.linux-arm64-musl.node
+rust-vexus-lite/vexus-lite.darwin-arm64.node
+rust-vexus-lite/vexus-lite.node
+Plugin/CodeSearcher/CodeSearcher-linux-arm64
+Plugin/CodeSearcher/CodeSearcher-linux-x64-musl
+Plugin/DailyNoteSearcher/DailyNoteSearcher-aarch64-unknown-linux-musl
+
+# ==== 大型可选二进制（走 GitHub Releases 分发） ====
+Plugin/PaperReader/bin/
+vcp-installer-一键安装脚本.exe
+
+# ==== 外部化字体（改用 CDN） ====
+Plugin/SkillBridge/SKILL/frontend-dev/canvas-fonts/
 
 # ==== 分布式开发 ====
 VCPDistributedServer

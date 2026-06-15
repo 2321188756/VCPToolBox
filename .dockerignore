@@ -18,13 +18,50 @@ Plugin/*/.env
 # Cache and data directories (to be mounted as volumes or handled by named volumes)
 Plugin/WeatherReporter/city_cache.txt
 Plugin/VCPLog/log/
-Plugin/ImageProcessor/cache/ # 假设插件的缓存目录是这个，如果不是，需要确认
+Plugin/ImageProcessor/cache/
 dailynote/
-image/fluxgen/
+
+# ==== 大型表情包资产（纯装饰，容器中无需） ====
+image/Nova表情包/
+image/Hornet表情包/
+image/爱弥斯表情包/
+image/微明表情包/
 image/小克表情包/
+image/magi/
+image/fluxgen/
 image/通用表情包/
 image/邵神韵表情包/
-# 其他 image 子目录如果也是动态生成的，也应该考虑加入
+
+# ==== 前端构建产物（容器内重建） ====
+AdminPanel-Vue/dist/
+AdminPanel-Vue/node_modules/
+
+# ==== 跨平台原生二进制（Docker 从源码编译） ====
+rust-vexus-lite/vexus-lite.linux-x64-gnu.node
+rust-vexus-lite/vexus-lite.linux-x64-musl.node
+rust-vexus-lite/vexus-lite.linux-arm64-musl.node
+rust-vexus-lite/vexus-lite.darwin-arm64.node
+rust-vexus-lite/vexus-lite.node
+Plugin/CodeSearcher/CodeSearcher-linux-arm64
+Plugin/CodeSearcher/CodeSearcher-linux-x64-musl
+Plugin/DailyNoteSearcher/DailyNoteSearcher-aarch64-unknown-linux-musl
+
+# ==== 大型可选二进制 ====
+Plugin/PaperReader/bin/
+vcp-installer-一键安装脚本.exe
+
+# ==== .NET 构建产物 ====
+Plugin/SkillBridge/SKILL/minimax-docx/**/bin/
+Plugin/SkillBridge/SKILL/minimax-docx/**/obj/
+
+# ==== 外部化字体 ====
+Plugin/SkillBridge/SKILL/frontend-dev/canvas-fonts/
+
+# ==== 陈旧/重复文件 ====
+docs/README.old.md
+vcptoolbox更新日志.txt
+poetry.lock
+pyproject.toml
 
 # IDE and OS specific files
 .vscode/

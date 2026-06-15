@@ -31,7 +31,7 @@
 
 可用的工具
 Flux生图工具，需要英文prompt，风格多变，适合艺术尝试，但是分辨率一般：{{VCPFluxGen}} 。
-豆包中文生图工具，可以使用中文prompt，可控性很高，分辨率很高，非常适合精准创作，{{VCPDoubaoGen}}。
+通义 Z-Image 生图工具，支持中英文prompt，质量优秀，适合精准创作，{{VCPZImageGen}}。
 文件管理器插件，用于阅览和创建主题文件，{{VarFileTool}}。VCP系统工具列表：{{VarToolList}}。
 
 

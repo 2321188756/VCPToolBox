@@ -144,11 +144,14 @@ config.env.local
 **/config.env
 !**/config.env.example
 
-# 有 .example 对应的运行时配置
+# 运行时配置（.example 模板在 docs/examples/）
 ModelRedirect.json
 agent_map.json
 preprocessor_order.json
-tag-processor-config.env
+SemanticModelRouter.json
+rag_params.json
+toolApprovalConfig.json
+toolbox_map.json
 
 # ===== 运行时数据 / 缓存 =====
 *.sqlite

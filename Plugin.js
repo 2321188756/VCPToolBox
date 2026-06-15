@@ -14,7 +14,7 @@ const { hasFoldMarkers, buildDynamicFoldObject } = require('./modules/foldProtoc
 
 const PLUGIN_DIR = path.join(__dirname, 'Plugin');
 const manifestFileName = 'plugin-manifest.json';
-const PREPROCESSOR_ORDER_FILE = path.join(__dirname, 'preprocessor_order.json');
+const PREPROCESSOR_ORDER_FILE = path.join(__dirname, 'config/preprocessor_order.json');
 const SSH_MANAGER_ENV_PLUGIN_ALLOWLIST = new Set([
     'LinuxShellExecutor',
     'LinuxLogMonitor'
@@ -40,7 +40,7 @@ class PluginManager extends EventEmitter {
         this.reloadTimeout = null;
         this.vectorDBManager = null; // 修复：不再自己创建，等待注入
         this.tdbKnowledgeManager = null; // 冷知识库管理器，等待 server.js 注入
-        this.toolApprovalManager = new ToolApprovalManager(path.join(__dirname, 'toolApprovalConfig.json'));
+        this.toolApprovalManager = new ToolApprovalManager(path.join(__dirname, 'config/toolApprovalConfig.json'));
         this.pendingApprovals = new Map(); // requestId -> { resolve, reject, timeoutId }
     }
 

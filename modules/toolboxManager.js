@@ -4,7 +4,7 @@ const path = require('path');
 const chokidar = require('chokidar');
 const { parseFoldBlocks, buildDynamicFoldObject } = require('./foldProtocol');
 
-const MAP_FILE = path.join(__dirname, '..', 'toolbox_map.json');
+const MAP_FILE = path.join(__dirname, '..', 'config', 'toolbox_map.json');
 
 function resolveTvsDir() {
   const configPath = process.env.TVSTXT_DIR_PATH;

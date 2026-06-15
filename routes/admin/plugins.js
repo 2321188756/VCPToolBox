@@ -9,7 +9,7 @@ const blockedManifestExtension = '.block';
 module.exports = function(options) {
     const router = express.Router();
     const { pluginManager, DEBUG_MODE } = options;
-    const PREPROCESSOR_ORDER_FILE = path.join(__dirname, '..', '..', 'preprocessor_order.json');
+    const PREPROCESSOR_ORDER_FILE = path.join(__dirname, '..', '..', 'config', 'preprocessor_order.json');
 
     // GET plugin list
     router.get('/plugins', async (req, res) => {

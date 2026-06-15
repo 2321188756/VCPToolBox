@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs').promises;
 const path = require('path');
 
-const SEMANTIC_ROUTER_CONFIG_PATH = path.resolve(__dirname, '..', '..', 'SemanticModelRouter.json');
+const SEMANTIC_ROUTER_CONFIG_PATH = path.resolve(__dirname, '..', '..', 'config', 'SemanticModelRouter.json');
 
 const DEFAULT_CONFIG = {
     enabled: true,

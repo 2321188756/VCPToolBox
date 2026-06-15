@@ -7,7 +7,7 @@ const repoRoot = path.resolve(__dirname, '..');
 const pluginPath = path.join(repoRoot, 'Plugin', 'OpenHerPersona', 'OpenHerPersona.js');
 const statePath = path.join(repoRoot, 'Plugin', 'OpenHerPersona', 'state', 'openher-persona-state.json');
 const stateDbPath = path.join(repoRoot, 'Plugin', 'OpenHerPersona', 'state', 'openher-persona-state.sqlite');
-const orderPath = path.join(repoRoot, 'preprocessor_order.json');
+const orderPath = path.join(repoRoot, 'config/preprocessor_order.json');
 const Database = require('better-sqlite3');
 
 function dbSidecarPaths(dbPath) {

@@ -1597,7 +1597,7 @@ async function startServer() {
     console.log('模型重定向配置加载完成。');
 
     console.log('正在加载语义模型路由配置...');
-    await semanticModelRouter.initialize(path.join(__dirname, 'SemanticModelRouter.json'), DEBUG_MODE);
+    await semanticModelRouter.initialize(path.join(__dirname, 'config', 'SemanticModelRouter.json'), DEBUG_MODE);
     console.log('语义模型路由配置加载完成。');
 
     // 新增：初始化Agent管理器

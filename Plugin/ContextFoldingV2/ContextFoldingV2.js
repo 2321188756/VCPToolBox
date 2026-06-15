@@ -120,7 +120,7 @@ class ContextFoldingV2 {
      */
     async _loadHotParams() {
         const projectBasePath = this._projectBasePath || process.env.PROJECT_BASE_PATH || path.join(__dirname, '../../');
-        const paramsPath = path.join(projectBasePath, 'rag_params.json');
+        const paramsPath = path.join(projectBasePath, 'config/rag_params.json');
         try {
             const data = await fs.readFile(paramsPath, 'utf-8');
             const allParams = JSON.parse(data);
@@ -142,7 +142,7 @@ class ContextFoldingV2 {
      */
     _startHotParamsWatcher() {
         const projectBasePath = this._projectBasePath || process.env.PROJECT_BASE_PATH || path.join(__dirname, '../../');
-        const paramsPath = path.join(projectBasePath, 'rag_params.json');
+        const paramsPath = path.join(projectBasePath, 'config/rag_params.json');
         if (this._ragParamsWatcher) return;
 
         this._ragParamsWatcher = chokidar.watch(paramsPath, { ignoreInitial: true });

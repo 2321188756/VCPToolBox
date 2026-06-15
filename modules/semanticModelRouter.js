@@ -94,7 +94,7 @@ function findLastMessageText(messages, role, ragPlugin = null) {
 
 class SemanticModelRouter {
   constructor() {
-    this.configPath = path.join(process.cwd(), 'SemanticModelRouter.json');
+    this.configPath = path.join(process.cwd(), 'config/SemanticModelRouter.json');
     this.config = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
     this.debugMode = false;
     this.watchHandle = null;

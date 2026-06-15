@@ -244,7 +244,7 @@ class RAGDiaryPlugin {
      * ✅ 新增：加载 RAG 热调控参数
      */
     async loadRagParams() {
-        const paramsPath = path.join(projectBasePath || path.join(__dirname, '../../'), 'rag_params.json');
+        const paramsPath = path.join(projectBasePath || path.join(__dirname, '../../'), 'config/rag_params.json');
         try {
             const data = await fs.readFile(paramsPath, 'utf-8');
             this.ragParams = JSON.parse(data);
@@ -259,7 +259,7 @@ class RAGDiaryPlugin {
      * ✅ 新增：启动参数监听器
      */
     _startRagParamsWatcher() {
-        const paramsPath = path.join(projectBasePath || path.join(__dirname, '../../'), 'rag_params.json');
+        const paramsPath = path.join(projectBasePath || path.join(__dirname, '../../'), 'config/rag_params.json');
         if (this.ragParamsWatcher) return;
 
         this.ragParamsWatcher = chokidar.watch(paramsPath);

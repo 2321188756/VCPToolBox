@@ -11,7 +11,7 @@ const Database = require('better-sqlite3');
 // 尝试加载 Rust Vexus 引擎
 let VexusIndex;
 try {
-    const vexusModule = require('./rust-vexus-lite');
+    const vexusModule = require('../rust-vexus-lite');
     VexusIndex = vexusModule.VexusIndex;
     console.log('[RepairScript] 🦀 Vexus-Lite Rust engine loaded');
 } catch (e) {

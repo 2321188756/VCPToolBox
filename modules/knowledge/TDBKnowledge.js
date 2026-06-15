@@ -21,7 +21,7 @@ try {
 
 let VexusWatcher = null;
 try {
-    const vexusModule = require('./rust-vexus-lite');
+    const vexusModule = require('../../rust-vexus-lite');
     VexusWatcher = vexusModule.VexusWatcher || null;
 } catch (e) {
     VexusWatcher = null;

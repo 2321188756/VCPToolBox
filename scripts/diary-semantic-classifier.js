@@ -24,7 +24,7 @@ const crypto = require('crypto');
 // 尝试加载 Rust Vexus 引擎 (用于重建索引)
 let VexusIndex;
 try {
-    const vexusModule = require('./rust-vexus-lite');
+    const vexusModule = require('../rust-vexus-lite');
     VexusIndex = vexusModule.VexusIndex;
 } catch (e) {
     console.warn('[Warning] Vexus-Lite engine not found. Index rebuilding might fail.');
@@ -34,7 +34,7 @@ try {
 dotenv.config({ path: path.join(__dirname, 'config.env') });
 
 // 引入 Embedding 工具
-const { getEmbeddingsBatch } = require('./EmbeddingUtils');
+const { getEmbeddingsBatch } = require('../modules/knowledge/EmbeddingUtils');
 
 // 配置
 const config = {

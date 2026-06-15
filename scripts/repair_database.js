@@ -12,7 +12,7 @@ console.log('===================================================================
 // --- Vexus Index Loader ---
 let VexusIndex;
 try {
-    const vexusModule = require('./rust-vexus-lite');
+    const vexusModule = require('../rust-vexus-lite');
     VexusIndex = vexusModule.VexusIndex;
     console.log('✅ Vexus-Lite Rust engine loaded.');
 } catch (e) {

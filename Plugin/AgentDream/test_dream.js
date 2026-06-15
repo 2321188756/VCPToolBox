@@ -17,7 +17,7 @@ if (fs.existsSync(mainEnvPath)) {
     dotenv.config({ path: mainEnvPath });
 }
 
-const knowledgeBaseManager = require('../../KnowledgeBaseManager');
+const knowledgeBaseManager = require('../../modules/knowledge/KnowledgeBaseManager');
 const AgentDream = require('./AgentDream.js');
 
 async function main() {

@@ -110,14 +110,14 @@ const tvsManager = require('./modules/tvsManager.js'); // 新增：TVS管理器
 const toolboxManager = require('./modules/toolboxManager.js');
 const dynamicToolRegistry = require('./modules/dynamicToolRegistry.js');
 const messageProcessor = require('./modules/messageProcessor.js');
-const knowledgeBaseManager = require('./KnowledgeBaseManager.js'); // 新增：引入统一知识库管理器
-const tdbKnowledgeManager = require('./TDBKnowledge.js'); // 新增：引入 TriviumDB 冷知识库管理器
+const knowledgeBaseManager = require('./modules/knowledge/KnowledgeBaseManager.js'); // 新增：引入统一知识库管理器
+const tdbKnowledgeManager = require('./modules/knowledge/TDBKnowledge.js'); // 新增：引入 TriviumDB 冷知识库管理器
 const pluginManager = require('./Plugin.js');
 const sarPromptManager = require('./modules/sarPromptManager.js');
 const taskScheduler = require('./routes/taskScheduler.js');
-const webSocketServer = require('./WebSocketServer.js'); // 新增 WebSocketServer 引入
-const FileFetcherServer = require('./FileFetcherServer.js'); // 引入新的 FileFetcherServer 模块
-const vcpInfoHandler = require('./vcpInfoHandler.js'); // 引入新的 VCP 信息处理器
+const webSocketServer = require('./modules/network/WebSocketServer.js'); // 新增 WebSocketServer 引入
+const FileFetcherServer = require('./modules/network/FileFetcherServer.js'); // 引入新的 FileFetcherServer 模块
+const vcpInfoHandler = require('./modules/handlers/vcpInfoHandler.js'); // 引入新的 VCP 信息处理器
 const basicAuth = require('basic-auth');
 const cors = require('cors'); // 引入 cors 模块
 
@@ -398,7 +398,7 @@ try {
 const CHINA_MODEL_1_COT = (process.env.ChinaModel1Cot || "false").toLowerCase() === "true";
 
 // 新增：模型重定向功能
-const ModelRedirectHandler = require('./modelRedirectHandler.js');
+const ModelRedirectHandler = require('./modules/handlers/modelRedirectHandler.js');
 const modelRedirectHandler = new ModelRedirectHandler();
 
 // 语义任务智能模型路由器

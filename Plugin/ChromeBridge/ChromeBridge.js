@@ -2,7 +2,7 @@
 // 混合插件：既是Service（常驻监控），又支持Direct调用（执行命令）
 
 const pluginManager = require('../../Plugin.js');
-const webSocketServer = require('../../WebSocketServer.js');
+const webSocketServer = require('../../modules/network/WebSocketServer.js');
 
 let pluginConfig = {};
 let debugMode = false;

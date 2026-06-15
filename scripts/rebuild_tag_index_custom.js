@@ -108,7 +108,7 @@ async function main() {
 
         // 步骤 5: 调用 Rust 引擎重建索引
         console.log('[Step 5/5] 正在通过 Rust 引擎重建索引...');
-        const { VexusIndex } = require('./rust-vexus-lite');
+        const { VexusIndex } = require('../rust-vexus-lite');
         const tagIdx = new VexusIndex(config.dimension, 50000);
         
         // 核心：从清理后的数据库重新加载

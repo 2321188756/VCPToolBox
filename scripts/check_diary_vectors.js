@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const Database = require('better-sqlite3');
-const { chunkText } = require('../TextChunker');
+const { chunkText } = require('../modules/knowledge/TextChunker');
 
 const diary = process.argv[2] || '小克的学习';
 const root = process.env.KNOWLEDGEBASE_ROOT_PATH || path.join(__dirname, '..', 'dailynote');

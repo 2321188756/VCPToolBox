@@ -14,7 +14,7 @@ const {
   isBetaSystemUserText,
   isSystemNotificationText,
 } = require("../../modules/messageProcessor.js");
-const { getEmbeddingsBatch, cosineSimilarity } = require("../../EmbeddingUtils.js");
+const { getEmbeddingsBatch, cosineSimilarity } = require("../../modules/knowledge/EmbeddingUtils.js");
 
 const PLUGIN_NAME = "OpenHerPersona";
 const PLUGIN_VERSION = "0.5.1";

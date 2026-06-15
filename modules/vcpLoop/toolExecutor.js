@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const crypto = require('crypto');
 const { pathToFileURL } = require('url');
-const { getEmbeddingsBatch, cosineSimilarity } = require('../../EmbeddingUtils');
+const { getEmbeddingsBatch, cosineSimilarity } = require('../../modules/knowledge/EmbeddingUtils');
 
 const VCP_TIMED_CONTACTS_DIR = path.join(__dirname, '..', '..', 'VCPTimedContacts');
 

@@ -58,7 +58,7 @@ function initialize(config, dependencies) {
 
     // 加载 KnowledgeBaseManager
     try {
-        knowledgeBaseManager = require('../../KnowledgeBaseManager');
+        knowledgeBaseManager = require('../../modules/knowledge/KnowledgeBaseManager');
         if (DEBUG_MODE) console.error('[AgentDream] KnowledgeBaseManager loaded.');
         
         const DreamWaveEngine = require('./DreamWaveEngine');

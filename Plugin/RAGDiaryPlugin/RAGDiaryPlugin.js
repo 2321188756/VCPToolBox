@@ -17,8 +17,8 @@ const FoldingStore = require('./FoldingStore.js'); // 🌟 V2折叠：SQLite 迷
 const CacheManager = require('./CacheManager.js'); // 🌟 新增：统一缓存管理器
 const TDBPlaceholderProcessor = require('./TDBPlaceholderProcessor.js'); // 🧊 冷知识库占位符适配层
 const DirectDiaryTextProcessor = require('./DirectDiaryTextProcessor.js'); // 📝 纯文本日记占位符处理器（{{...日记本...}}）
-const { chunkText } = require('../../TextChunker.js');
-const { getEmbeddingsBatch } = require('../../EmbeddingUtils.js');
+const { chunkText } = require('../../modules/knowledge/TextChunker.js');
+const { getEmbeddingsBatch } = require('../../modules/knowledge/EmbeddingUtils.js');
 const {
     findLastRealUserMessage,
     isBetaSystemUserText,

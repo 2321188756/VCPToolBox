@@ -15,7 +15,7 @@ const TagMemoEngine = require('./TagMemoEngine');
 // 尝试加载 Rust Vexus 引擎
 let VexusIndex = null;
 try {
-    const vexusModule = require('./rust-vexus-lite');
+    const vexusModule = require('../../rust-vexus-lite');
     VexusIndex = vexusModule.VexusIndex;
     console.log('[KnowledgeBase] 🦀 Vexus-Lite Rust engine loaded');
 } catch (e) {
@@ -1666,7 +1666,7 @@ class KnowledgeBaseManager {
         if (VexusIndex && VexusIndex.prototype && typeof VexusIndex.prototype.start_watch === 'undefined') {
             // 动态获取导出的 VexusWatcher 类
             try {
-                const vexusModule = require('./rust-vexus-lite');
+                const vexusModule = require('../../rust-vexus-lite');
                 if (vexusModule.VexusWatcher) {
                     const rustWatcher = new vexusModule.VexusWatcher();
                     

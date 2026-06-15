@@ -1194,7 +1194,6 @@ fn main(mut cx: ModuleContext) -> NeonResult<()> {
 | ArxivDailyPapers | static | Arxiv 每日论文 |
 | CrossRefDailyPapers | static | CrossRef 每日论文 |
 | DeepWikiVCP | synchronous | DeepWiki 知识检索 |
-| KarakeepSearch | synchronous | Karakeep 搜索 |
 | KEGGSearch | synchronous | KEGG 生物数据库 |
 
 ### 9.3 文件操作 (8 个)

@@ -162,7 +162,6 @@
 | `FlashDeepSearch` | synchronous | 深度爬虫搜索 | FlashDeepSearch.js |
 | `PubMedSearch` | synchronous | PubMed搜索 | PubMedSearch.js |
 | `KEGGSearch` | synchronous | KEGG搜索 | KEGGSearch.js |
-| `KarakeepSearch` | synchronous | Karakeep搜索 | KarakeepSearch.js |
 
 ### 4.3 日记与记忆类 (6个)
 

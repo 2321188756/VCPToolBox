@@ -138,7 +138,6 @@ docker-compose down
 - **Plugin/LinuxLogMonitor/** (8文件, 2,945行) - core/架构：AnomalyDetector, MonitorManager, MonitorTask
 - **Plugin/ComfyUIGen/** (18文件) - JS+Python双语言工作流系统
 - **Plugin/IMAPIndex/** (15文件) - 3个子系统：proxy, storkapp_dailynote, storkapp_dailynote_pubmed
-- **Plugin/PaperReader/** (11文件) - lib/库架构：chunker, ingest, deep-reader, query管线
 
 ## 备注
 - **CI工作流**：`.github/workflows/ci.yml` 执行 `npm ci` + Docker 构建（不推送镜像，且不做有效根层测试）。

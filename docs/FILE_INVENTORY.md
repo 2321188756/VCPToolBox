@@ -139,8 +139,6 @@
 | `DoubaoGen` | synchronous | 豆包生图 | DoubaoGen.js |
 | `DMXDoubaoGen` | synchronous | 豆包视频生成 | DMXDoubaoGen.js |
 | `GeminiImageGen` | synchronous | Gemini图像生成 | GeminiImageGen.js |
-| `GrokVideo` | asynchronous | Grok视频生成 | video_handler.py, GrokVideo.js |
-| `VideoGenerator` | asynchronous | 视频生成器 | video_handler.py, VideoGenerator.js |
 | `SunoGen` | asynchronous | Suno音乐生成 | SunoGen.js |
 | `NanoBananaGen2` | synchronous | 纳米香蕉2代 | NanoBananaGen2.js |
 | `NanoBananaGenOR` | synchronous | 纳米香蕉OR版 | NanoBananaGenOR.js |
@@ -163,7 +161,6 @@
 | `DeepWikiVCP` | synchronous | DeepWiki集成 | DeepWikiVCP.js |
 | `FlashDeepSearch` | synchronous | 深度爬虫搜索 | FlashDeepSearch.js |
 | `PubMedSearch` | synchronous | PubMed搜索 | PubMedSearch.js |
-| `NCBIDatasets` | synchronous | NCBI数据集 | NCBIDatasets.js |
 | `KEGGSearch` | synchronous | KEGG搜索 | KEGGSearch.js |
 | `KarakeepSearch` | synchronous | Karakeep搜索 | KarakeepSearch.js |
 
@@ -242,7 +239,6 @@
 | `ScheduleManager` | service | 调度管理器 | - |
 | `ScheduleBriefing` | static | 调度简报 | - |
 | `TimelineGenerator` | synchronous | 时间线生成 | - |
-| `ProjectAnalyst` | service | 项目分析 | GUI.py |
 
 ### 4.11 其他工具类 (15个)
 
@@ -258,18 +254,13 @@
 | `LightMemo` | synchronous | 轻量备忘 | - |
 | `MCPO` | synchronous | MCP协议兼容 | mcpo_plugin.py |
 | `MCPOMonitor` | service | MCP监控 | - |
-| `AnimeFinder` | synchronous | 动漫查找 | AnimeFinder.js |
-| `ArtistMatcher` | synchronous | 艺术家匹配 | artist_matcher.py |
-| `SVCardFinder` | synchronous | SV卡片查找 | card_finder.py |
 | `MIDITranslator` | synchronous | MIDI翻译 | - |
-| `TencentCOSBackup` | asynchronous | 腾讯云备份 | cos_handler.py |
 | `SynapsePusher` | synchronous | Synapse推送 | - |
 | `VCPLog` | service | VCP日志 | - |
 | `VCPForumLister` | static | 论坛列表 | - |
 | `ThoughtClusterManager` | service | 思维聚类管理 | - |
 | `SemanticGroupEditor` | static | 语义组编辑 | - |
 | `IMAPIndex` | service | IMAP索引 | - |
-| `PaperReader` | synchronous | 论文阅读 | - |
 
 ---
 

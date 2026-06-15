@@ -461,10 +461,7 @@ Plugin/DailyNote/config.env
 | 文件路径 | 职责 |
 |---------|------|
 | `README.md` | 主文档（中文） |
-| `README_en.md` | 英文文档 |
-| `README_ja.md` | 日文文档 |
-| `README_ru.md` | 俄文文档 |
-| `VCP.md` | VCP理论文档 |
+| `docs/VCP.md` | VCP理论文档 |
 | `dailynote.md` | 日记系统文档 |
 | `TagMemo_Wave_Algorithm_Deep_Dive.md` | TagMemo算法深度解析 |
 | `AGENTS.md` | 项目知识库 |

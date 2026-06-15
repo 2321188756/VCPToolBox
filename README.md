@@ -4,8 +4,6 @@
 
 **官网：[www.vcptoolbox.com](https://www.vcptoolbox.com)**
 
-[English](README_en.md) | [日本語](README_ja.md) | [Русский](README_ru.md)
-
 ---
 
 > ⚠️ **部署前请务必阅读**：VCP Agent 拥有分布式系统的底层级权限。请勿使用任何非官方或反向代理的 API（"镜像站""中转 API"）。在底层监控权限下，不可信的 API 可能导致交互数据、记忆库内容、密钥等敏感信息泄露。非专业用户请谨慎部署。

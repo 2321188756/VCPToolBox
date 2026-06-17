@@ -61,7 +61,7 @@ search_all_knowledge_bases:「始」false「末」 //是否搜索其它人的日
 
 {{VCPSearchToolBox}}
 全球数字金融检索插件
-{{VCPDigitalOracle}}
+
 9.进行数据计算使用科学计算器插件 (SciCalculator)
 tool_name:「始」SciCalculator「末」,
 expression:「始」您要计算的完整数学表达式「末」

@@ -1,0 +1,40 @@
+{
+  "manifestVersion": "1.0.0",
+  "name": "BilibiliFetch",
+  "displayName": "B站内容获取插件",
+  "version": "1.0.0",
+  "description": "获取B站视频信息、评论、弹幕、字幕等内容。支持视频信息查询、评论抓取、弹幕获取、字幕下载和搜索。",
+  "author": "VCP",
+  "pluginType": "synchronous",
+  "entryPoint": {
+    "type": "nodejs",
+    "command": "node BilibiliFetch.js"
+  },
+  "communication": {
+    "protocol": "stdio",
+    "timeout": 60000
+  },
+  "configSchema": {
+    "BILIBILI_COOKIE": {
+      "type": "string",
+      "description": "B站登录Cookie。非必填，但获取字幕、私密视频需要。从浏览器开发者工具 Network 标签复制完整 Cookie。",
+      "default": ""
+    },
+    "BILIBILI_SUB_LANG": {
+      "type": "string",
+      "description": "字幕语言偏好",
+      "default": "ai-zh"
+    }
+  },
+  "capabilities": {
+    "invocationCommands": [
+      {
+        "commandIdentifier": "BilibiliFetch",
+        "description": "B站内容获取插件，支持以下命令：\n\n## 1. 获取视频信息（video_info）\n查询视频的基本信息：标题、UP主、播放量、点赞、收藏、简介等。\n参数:\n- command (字符串, 必需): 'video_info'\n- bvid (字符串, 必需): 视频BV号，例如 'BV1GJ411x7h7'\n\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」BilibiliFetch「末」,\ncommand:「始」video_info「末」,\nbvid:「始」BV1GJ411x7h7「末」\n<<<[END_TOOL_REQUEST]>>>\n\n## 2. 获取评论（comments）\n获取视频的热门评论。\n参数:\n- command (字符串, 必需): 'comments'\n- bvid (字符串, 必需): 视频BV号\n- limit (数字, 可选, 默认20): 返回评论数量\n\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」BilibiliFetch「末」,\ncommand:「始」comments「末」,\nbvid:「始」BV1GJ411x7h7「末」,\nlimit:「始」20「末」\n<<<[END_TOOL_REQUEST]>>>\n\n## 3. 获取弹幕（danmaku）\n获取视频的弹幕列表。\n参数:\n- command (字符串, 必需): 'danmaku'\n- bvid (字符串, 必需): 视频BV号\n\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」BilibiliFetch「末」,\ncommand:「始」danmaku「末」,\nbvid:「始」BV1GJ411x7h7「末」\n<<<[END_TOOL_REQUEST]>>>\n\n## 4. 获取字幕（subtitle）\n获取视频的字幕（需要 BILIBILI_COOKIE）。返回字幕的完整文本内容。\n参数:\n- command (字符串, 必需): 'subtitle'\n- bvid (字符串, 必需): 视频BV号\n\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」BilibiliFetch「末」,\ncommand:「始」subtitle「末」,\nbvid:「始」BV1GJ411x7h7「末」\n<<<[END_TOOL_REQUEST]>>>\n\n## 5. 搜索视频（search）\n按关键词搜索B站视频。\n参数:\n- command (字符串, 必需): 'search'\n- keyword (字符串, 必需): 搜索关键词\n- limit (数字, 可选, 默认10): 返回结果数量\n\n调用格式:\n<<<[TOOL_REQUEST]>>>\ntool_name:「始」BilibiliFetch「末」,\ncommand:「始」search「末」,\nkeyword:「始」雷军 演讲「末」,\nlimit:「始」10「末」\n<<<[END_TOOL_REQUEST]>>>"
+      }
+    ]
+  },
+  "compatibility": {
+    "nodeVersion": ">=14.0.0"
+  }
+}
